@@ -728,6 +728,10 @@ a:link{
 .grs0, .grs1, .grs2{
     height: 100px;
 }
+.grs2{
+
+    width: 10px;
+}
 .grs0 img, .grs1 img, .grs2 img{
     width: 400px;
 }
