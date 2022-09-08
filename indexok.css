@@ -711,6 +711,44 @@ a:link{
 
 
 
+.grblocs{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo_site);
+    border-bottom: 100px solid var(--cor-fundo_site);
+}
+.gresq{
+    margin: 0 auto;
+    width: 400px;
+}
+
+
+.grs0, .grs1, .grs2{
+    height: 100px;
+}
+.grs0 img, .grs1 img, .grs2 img{
+    width: 400px;
+}
+
+.grs0 img{
+    margin-top: 50px;
+}
+.grs1 img{
+    margin-top: -50px;
+}
+.grs2 img{
+    margin-top: -150px;
+}
+
+
+
+
+
+
+
+
 
 .wireframes{
     margin: 0 auto;
