@@ -639,11 +639,18 @@ a:link{
 }
 
 .prif{
+    font-family: "Prototype";
     text-align: center;
     margin: 10px 0px 20px 0px;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 30px;
+
+    background: -webkit-linear-gradient(left, rgb(239, 0, 187),var(--cor-menu_fundo2));
+    background: linear-gradient(to right, rgb(239, 0, 187),var(--cor-menu_fundo2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+
 .cote{
     margin: 35px 12px 0px 12px;
     display: flex;
