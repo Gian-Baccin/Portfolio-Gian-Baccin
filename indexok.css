@@ -746,7 +746,11 @@ a:link{
     margin-top: -150px;
 }
 
-
+@media screen and (max-width: 380px){
+    .gresq{
+        width: 350px;
+    }
+}
 
 
 
