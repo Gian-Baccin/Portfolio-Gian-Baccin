@@ -712,6 +712,7 @@ a:link{
 
 
 .grblocs{
+    width: 100%;
     margin: 100px auto;
     display: flex;
     justify-content: center;
@@ -746,11 +747,17 @@ a:link{
     margin-top: -150px;
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 390px){
     .gresq{
-        width: 350px;
+        width: 340px;
+    }
+    .grs0 img, .grs1 img, .grs2 img{
+        width: 320px;
     }
 }
+
+
+
 
 
 
