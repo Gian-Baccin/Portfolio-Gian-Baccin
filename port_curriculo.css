@@ -719,9 +719,10 @@ a:link{
         display: block;
     }
     .tutividad{
-        margin: 35px 0px 0px 10px;
+        margin: 30px 0px 0px 10px;
     }
     .atrb{
+	margin-top: 1px;
         font-size: 21px;
     }
     .linethree{
