@@ -433,6 +433,7 @@ a:link{
     color: var(--cor-menu_fundo2);
 }
 .atrb{
+    font-size: 23px;
     color: var(--cor-menu_selecionado);
 }
 .leiamais, .leiamais2{
@@ -604,6 +605,7 @@ a:link{
     color: var(--cor-mafim);
     font-family: "Segoe UI Light";
     font-weight: lighter;
+    font-size: 16px;
 }
 
 
@@ -644,8 +646,11 @@ a:link{
     font-size: 25px;
     font-weight: bold;
 
+
     background: -webkit-linear-gradient(left, rgb(239, 0, 187),var(--cor-menu_fundo2));
     background: linear-gradient(to right, rgb(239, 0, 187),var(--cor-menu_fundo2));
+
+
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -673,7 +678,7 @@ a:link{
     color: var(--cor-menu_fundo);
 }
 .inli2{
-    font-size: 23px;
+    font-size: 21px;
     font-weight: bold;
     font-family: 'Arial Narrow Bold', sans-serif;
     color: var(--cor-menu_selecionado);
@@ -706,5 +711,14 @@ a:link{
     .cardo3, .cardo4, .cardo5{
         margin: 30px auto;
 
+    }
+}
+
+@media screen and (max-width: 450px){
+    .roda{
+        display: block;
+    }
+    .tutividad{
+        margin: 40px 0px 0px 10px;
     }
 }
