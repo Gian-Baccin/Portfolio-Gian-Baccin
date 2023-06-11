@@ -1,744 +1,370 @@
-:root{
-    --cor-fundo_site : rgb(240, 240, 240);
-    --cor-fundo_site2 :rgb(230, 230, 230);
-    --cor-menu_fundo : rgb(52, 52, 52);
-    --cor-menu_fundo2 : rgb(60, 60, 60);
-    --cor-menu_selecionado : rgb(70, 70, 70);
-    --cor-menu_selecionado2 : rgb(85, 85, 85);
-
-    --cor-menu_letra : rgb(225, 225, 225);
-    --cor-menu_letra_selec : rgb(248, 248, 248);
-    --cor-azul : rgb(255, 255, 255);
-    --cor-azulbtn : rgb(66, 137, 223);
-    --cor-azulbtn2 :rgb(77, 152, 244);
-    --cor-mafim : rgb(215, 228, 227);
-
-}
-*{
-    font-family: Verdana, "Franklin Gothic Demi", sans-serif;
-    font-size: 18px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    margin: 0 auto;
-    background-color: var(--cor-fundo_site);
-}
-.aaa, .aaa2{
-    display: flex;
-    justify-content: center;
-}
-.aaa2{
-    padding-top: 12px;
-    height: 350px;
-}
-.separacioneq, .separacione{
-    width: 100px;
-    height: 60px;
-}
-
-
-
-
-
-.navigaciona{
-    z-index: 2;
-    position: absolute;
-    position: fixed;
-    background-color: var(--cor-menu_fundo);
-    width: 100%;
-    height: 50px;
-}
-.cotai{
-    margin: 0 auto;
-    display: flex;
-    max-width: 1060px;
-    width: 100%;
-    height: auto;
-}
-.menuzinhoa{
-    width: 100%;
-    max-width: 1060px;
-    display: flex;
-}
-
-.navigaciona ul li{
-    width: 100%;
-    text-align: center;
-    display: inline;
-}
-.navigaciona ul li a{
-    font-family: Verdana, Tahoma, sans-serif;
-    color: var(--cor-fundo_site);
-    border-bottom: 4px solid var(--cor-menu_fundo);
-    border-top: 4px solid var(--cor-menu_fundo);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px 10px 20px;
-    width: 100%;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-.navigacionax{
-    z-index: 2;
-    position: absolute;
-    position: fixed;
-    background-color: var(--cor-menu_fundo);
-    width: 100%;
-    height: 50px;
-}
-.cotaix{
-    margin: 0 auto;
-    display: flex;
-    max-width: 1060px;
-    width: 100%;
-    height: auto;
-}
-.menuzinhoax{
-    width: 100%;
-    max-width: 1060px;
-    display: flex;
-}
-.navigacionax ul{
-    list-style-type: none;
-    height: 50px;
-}
-.navigacionax ul li{
-    width: 100%;
-    text-align: center;
-    display: inline;
-}
-.navigacionax ul li a{
-    font-family: Verdana, Tahoma, sans-serif;
-    color: var(--cor-fundo_site);
-    border-bottom: 4px solid var(--cor-menu_fundo);
-    border-top: 4px solid var(--cor-menu_fundo);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px 10px 20px;
-    height: 50px;
-    text-align: center;
-} 
-
-
-
-
-
-
-.navigacionax, .cotaix, .menuzinhoax{
-    display: none;
-}
-
-.navigaciona ul li a:hover,
-.navigacionax ul li a:hover{
-    border-top: 4px solid var(--cor-menu_selecionado);
-    background-color: var(--cor-menu_selecionado);
-    color: var(--cor-azul);
-    border-bottom: 4px solid var(--cor-azul);
-}
-
-#ins a{
-    color: var(--cor-fundo_site2);
-    border-bottom: 3px solid var(--cor-fundo_site2);
-}
-
-@media screen and (max-width: 550px){
-    .navigaciona ul li a{
-        padding: 10px 0px 10px 0px;
-    }
-}
-@media screen and (max-width: 450px){
-    .navigacionax, .cotaix, .menuzinhoax{
-       display: flex;
-     }
-
-    .navigaciona, .cotai, .menuzinhoa{
-        display: none;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-.grayblocaum{
-    background-color: rgb(227, 227, 227);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.grayblocaum::before, .grayblocaum::after{
-    position: absolute;
-    content: '';
-    width: 100px;
-    height: 30px;
-    background-color: rgb(227, 227, 227);
-    z-index: 1;
-    bottom: -10px;
-}
-
-.grayblocaum::before{
-    right: 50%;
-    transform: skew(0, 20deg);
-}
-.grayblocaum::after{
-    left: 50%;
-    transform: skew(0, -20deg);
-}
-
-.blocentral{
-    padding: 15px;
-    width: 350px;
-    margin: 0 auto;
-}
-.cardtuto1{
-    padding: 5px 0px 5px 12px;
-    font-size: 30px;
-    border-radius: 0px 30px 0px 0px;
-    margin: 0 20% 15px 0;
-    background-color: var(--cor-menu_selecionado);
-    color: var(--cor-menu_letra_selec);
-    height: 50px;
-}
-.cardtuto2{
-    padding: 5px 0px 5px 20px;
-    font-size: 30px;
-    border-radius: 30px 0px 0px 0px;
-    margin: 0 0 25px 20%;
-    background-color: white;
-    color: var(--cor-azulbtn);
-    height: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.blocopao{
-    margin-bottom: -10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.paocentral{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 1000px;
-    max-width: 1000px;
-    height: auto;
-    margin: 45px auto;
-}
-
-.crumb, .crumbon{
-    padding: 0 10px 3px 10px;
-    font-size: 22px;
-    font-family: "Segoe UI Light";
-    text-decoration: none;
-}
-.crumb a{
-    color:var(--cor-azulbtn);
-}
-.crumbon a{
-    color: var(--cor-azulbtn2);
-}
-.crumbdivision{
-    padding: 0 10px 2px 10px;
-    font-weight: 600;
-    font-size: 22px;
-    font-family: "Segoe UI Light";
-    color: var(--cor-azulbtn);
-}
-a:link{
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.blocu, .blocu2{
-    margin: 10px 0px; 
-    display: flex;
-    width: 100%;
-    max-width: 1060px;
-    height: auto;
-
-}
-.blocu{
-    justify-content: start;
-}
-.blocu2{
-    justify-content: end;
-}
-
-
-
-.cardo, .cardo2{
-    padding: 10px 10px 5px 10px;
-    width: 900px;
-    max-width: 900px;
-    height: auto;
-}
-.cardo{
-    border-radius: 0px 30px 0px 0px;
-    margin: 0 7% 0 3%;
-    background-color: var(--cor-menu_selecionado);
-    color: var(--cor-menu_letra_selec);
-}
-.cardo2{
-    border-radius: 30px 0px 0px 0px;
-    margin: 0 3% 0 7%;
-    background-color: white;
-    color: var(--cor-fundo_site);
-}
-.farst{
-    display: flex;
-    font-family: Verdana;
-}
-.cussu, .jobu{
-    font-size: 30px;
-}
-.jobu, .pri, .prif{
-    color: var(--cor-azulbtn);
-}
-.iconi, .iconi2, .iconibuff, .iconifreela, .iconitrophy, .star, .star2,
-.uum, .ddois, .ttres, .qquatro, .ccinco{
-    margin-left: 8px;
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.iconipercepssaum, .iconipefomaci{
-    width: 34px;
-    height: 34px;
-    min-width: 34px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.iconi{
-    background-image: url(imgs/sts_done.png);
-}
-.iconi2{
-    background-image: url(imgs/sts_clt.png);
-}
-.iconibuff{
-    background-image: url(imgs/sts_buffering.png);
-}
-.iconifreela{
-    background-image: url(imgs/sts_freela.png);
-}
-.iconitrophy{
-    background-image: url(imgs/sts_trophy.png);
-}
-.star{
-    background-image: url(imgs/sts_star.png);
-}
-.star2{
-    background-image: url(imgs/sts_star2.png);
-}
-.iconipercepssaum{
-    margin-left: 3px;
-    background-image: url(imgs/sts_perception.png);
-}
-.iconipefomaci{
-    margin-left: 3px;
-    background-image: url(imgs/sts_performance.png);
-}
-.uum{
-    background-image: url(imgs/amhome.png);
-}
-.ddois{
-    background-image: url(imgs/amresume.png);
-}
-.ttres{
-    background-image: url(imgs/amprojects.png);
-}
-.qquatro{
-    background-image: url(imgs/amservices.png);
-}
-.ccinco{
-    background-image: url(imgs/amcontact.png);
-}
-
-
-.iconi:hover, .iconi2:hover, .iconibuff:hover, .iconifreela:hover, .iconitrophy:hover{
-    cursor: pointer;
-}
-.secan, .secan2, .linethree{
-    font-weight: 600;
-    margin-top: 10px;
-    font-size: 17px;
-    font-family: "Segoe UI Light";
-}
-.secan{
-    color: var(--cor-fundo_site2);
-}
-.secan2{
-    color: var(--cor-azulbtn);
-}
-
-.tard{
-    display: flex;
-    justify-content: space-between;
-}
-
-.descript, .descript2, .atrb{
-    font-weight: 600;
-    font-size: 24px;
-    font-family: "Segoe UI Light";
-}
-
-
-.descript{
-    color: var(--cor-fundo_site2);
-}
-.descript2{
-    color: var(--cor-azulbtn);
-}
-.atrb{
-    font-size: 22px;
-    color: var(--cor-menu_selecionado);
-}
-.leiamais, .leiamais2{
-    transition: 0.2s;
-    font-size: 20px;
-    font-family: "Segoe UI Light";
-    padding-bottom: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;  
-    border-radius: 10px;
-    margin: 8px 0px;
-}
-.leiamais{
-    height: 35px;
-    background-color: var(--cor-menu_selecionado);
-    color: var(--cor-azul);
-    border: 1px solid var(--cor-azul);
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-}
-.leiamais2{
-    height: 35px;
-    background-color: white;
-    color: var(--cor-azulbtn);
-    border: 1px solid var(--cor-azulbtn);
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-}
-.leiamais:hover{
-    filter: brightness(110%);
-    cursor: pointer;
-}
-.blocu3:hover, .blocu4:hover, .blocu5:hover{
-    filter: brightness(110%);
-    cursor: pointer;
-    margin-top: -5px;
-}
-.leiamais2:hover{
-    filter: brightness(103%);
-    cursor: pointer;
-}
-@media screen and (max-width: 880px){
-    .tard{
-        display: block;
-
-    }
-}
-
-@media screen and (max-width: 590px){
-    .cardo, .cardo2{
-    margin: 0;
-
-    }
-}
-
-@media screen and (max-width: 450px){
-    .cussu, .jobu{
-    font-size: 25px;
-    }
-    .farst, .farst2{
-    display: block;
-
-    }
-    .tard{
-        display: block;
-
-    }
-    .iconi, .iconi2, .iconibuff, .iconifreela, .iconitrophy{
-    margin: 5px 0px;
-
-    }
-}
-
-
-.blocu3{
-    margin: 0px 20px 0px 20px;
-    border-radius: 20px 20px 20px 20px;
-    transition: 0.4s;
-
-}
-.cardo3{
-    border: 1px solid rgb(60, 186, 188);
-    border-radius: 20px 20px 20px 20px;
-    background-color: white;
-    padding: 10px 10px 5px 10px;
-    width: 280px;
-    max-width: 280px;
-    height: auto;
-}
-
-.pri{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-.linha{
-    padding-left: 5px;
-    padding-right: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-.points{
-    display: flex;
-}
-
-.separacione2{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-items: center;
-    width: 100%;
-    height: 4px;
-    background-color: var(--cor-menu_fundo);
-}
-
-
-
-
-
-
-
-.blocu4, .blocu5{
-    transition: 0.4s;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.cardo4{
-    margin: 8px 10px 0px 10px;
-    border: 2px solid var(--cor-menu_fundo);
-    border-radius: 20px 20px 20px 20px;
-    background-color: var(--cor-menu_fundo);
-    padding: 10px 10px 5px 10px;
-    width: 250px;
-    max-width: 250px;
-    height: 290px;
-}
-
-.pri2{
-    font-family: 'Segoe UI Light', Verdana;
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 27px;
-    color: var(--cor-azul);
-}
-
-.caditop, .cadibottu{
-    margin: 10px 0px;
-	background-color: var(--cor-menu_selecionado);
-}
-
-.lineone{
-    padding-top: 7px;
-    background-color: var(--cor-menu_selecionado);
-	display: flex;
-	height: auto;
-}
-.atbutu{
-    margin-left: 3px;
-    color: var(--cor-azul);
-    font-size: 24px;
-    font-family: "Segoe UI Light";
-}
-
-.linetwo{
-    margin: 10px 0px 0px 0px;
-	width: 100%;
-    height: 1px;
-    background-color: var(--cor-azul);
-}
-.linethree{
-    margin: 1px 2px;
-    padding-bottom: 3px;
-    color: var(--cor-mafim);
-    font-family: "Segoe UI Light";
-    font-weight: lighter;
-    font-size: 16px;
-}
-
-
-
-
-
-
-.blocu5grad{
-    margin-left: -12px;
-    margin-top: -12px;
-    width: 250px;
-    max-width: 250px;
-    height: 290px;
-    border-radius: 20px 20px 20px 20px;
-    position: absolute;
-    background-image: linear-gradient(45deg, var(--cor-azul), var(--cor-menu_selecionado));
-}
-
-
-.cardo5, .cardo5falso{
-
-    border: 2px solid var(--cor-menu_fundo2);
-    border-radius: 20px 20px 20px 20px;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 10px 10px 5px 10px;
-    width: 250px;
-    max-width: 250px;
-    height: 290px;
-}
-.cardo5{
-    margin: 8px 10px 0px 10px;
-    position: relative;
-}
-
-.prif{
-    text-align: center;
-    margin: 10px 0px 20px 0px;
-    font-size: 25px;
-    font-weight: bold;
-
-
-    background: -webkit-linear-gradient(left, rgb(239, 0, 187),var(--cor-menu_fundo2));
-    background: linear-gradient(to right, rgb(239, 0, 187),var(--cor-menu_fundo2));
-
-
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.cote{
-    margin: 35px 12px 0px 12px;
-    display: flex;
-}
-
-.coli1{
-    margin-left: 5px;
-    margin-right: 8px;
-    background-color: var(--cor-menu_selecionado);
-    height: 80px;
-    width: 5px;
-}
-.coli2{
-    margin: 5px 0px;
-}
-.inli1{
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 17px;
-    color: var(--cor-menu_fundo);
-}
-.inli2{
-    font-size: 21px;
-    font-weight: bold;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    color: var(--cor-menu_selecionado);
-
-}
-
-.roda{
-    margin-left: 10px;
-    display: flex;
-}
-.tutividad{
-    margin: 60px 0px 0px 10px;
-    color: var(--cor-menu_selecionado);
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-}
-.roditem{
-    margin-right: 5px;
-    color: var(--cor-menu_selecionado);
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-size: 16px;
-}
-
-@media screen and (max-width: 830px){
-    .aaa2{
-        display: block;
-        height: auto;
-    }
-    .cardo3, .cardo4, .cardo5{
-        margin: 30px auto;
-
-    }
-}
-
-@media screen and (max-width: 450px){
-    .roda{
-        display: block;
-    }
-    .tutividad{
-        margin: 30px 0px 0px 10px;
-    }
-    .atrb{
-	    margin-top: 3px;
-        font-size: 21px;
-    }
-    .linethree{
-        font-size: 15px;
-    }
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="port_curriculo.css" />
+    <title>Resumé - Gian Orio</title>
+</head>
+<body>
+    <nav class="navigaciona">
+        <div class="cotai">
+        <!-- AQUI EU CONTROLO A LISTA-->
+          <ul class="menuzinhoa">
+            <li><a href="index.html">Home</a></li>
+            <li id="ins"><a href="#">Resumé</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul> 
+        </div>
+    </nav>
+
+    <nav class="navigacionax">
+        <div class="cotaix">
+        <!-- AQUI EU CONTROLO A LISTA-->
+          <ul class="menuzinhoax">
+            <li><a class="uum" href="index.html"></a></li>
+            <li id="ins"><a class="ddois" href="#"></a></li>
+            <li><a class="ttres" href="#"></a></li>
+            <li><a class="qquatro" href="#"></a></li>
+            <li><a class="ccinco" href="#"></a></li>
+          </ul> 
+        </div>
+    </nav>
+
+
+<div class="separacioneq"></div>
+
+
+<div class="grayblocaum">
+    <div class="blocentral">
+        <div class="cardtuto1" data-aos="fade-right">Courses</div>
+        <div class="cardtuto2" data-aos="fade-left">Jobs</div>
+    </div>
+</div>
+
+<div class="blocopao">
+    <div class="paocentral">
+        <div class="crumb"><a href="index.html">Home</a></div>
+        <div class="crumbdivision">></div>
+        <div class="crumbon"><a href="#">Resumé</a></div>
+    </div>
+</div>
+
+
+<div class="aaa">
+    <div class="blocu2">
+        <div class="cardo2">
+            <div class="farst">
+                <div class="jobu">Accruent - São Leopoldo/Remote</div>
+                <div class="iconi2" title="CLT"></div>
+            </div>
+            <div class="secan2">2023 - Present</div>
+            <div class="tard">
+                <div class="descript2">Support Agent</div>
+                <div class="leiamais2" title="More information">Read More...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu">
+        <div class="cardo">
+            <div class="farst">
+                <div class="cussu">FAQI - Systems Analysis and Development</div>
+                <div class="iconibuff" title="Ongoing"></div>
+            </div>
+            <div class="secan">2022 - Present</div>
+            <div class="tard">
+                <div class="descript">IT Undergraduate Course.</div>
+                <div class="leiamais" title="More information">Read More...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu">
+        <div class="cardo">
+            <div class="farst">
+                <div class="cussu">Udemy - UI Design</div>
+                <div class="iconibuff" title="Ongoing"></div>
+            </div>
+            <div class="secan">2021 - Present</div>
+            <div class="tard">
+                <div class="descript">Specialization in UI Design.</div>
+                <div class="leiamais" title="More information">Read More...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="aaa">
+    <div class="blocu2">
+        <div class="cardo2">
+            <div class="farst">
+                <div class="jobu">CCAA - Gravataí/Cachoeirinha</div>
+                <div class="iconi2" title="CLT"></div>
+            </div>
+            <div class="secan2">2019 - Present</div>
+            <div class="tard">
+                <div class="descript2">English Teacher</div>
+                <div class="leiamais2" title="More information">Read More...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu2">
+        <div class="cardo2">
+            <div class="farst">
+                <div class="jobu">Maker's Jam</div>
+                <div class="iconifreela" title="Free Lance"></div>
+                <div class="iconitrophy" title="1st Place"></div>
+            </div>
+            <div class="secan2">2019 - Game: Omni Cyber</div>
+            <div class="tard">
+                <div class="descript2">Game Development Contest — National</div>
+                <div class="leiamais2" title="More information">Read More...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu">
+        <div class="cardo">
+            <div class="farst">
+                <div class="cussu">CCAA - English Certificate</div>
+                <div class="iconi" title="Concluded"></div>
+            </div>
+            <div class="secan">2018 - 2019</div>
+            <div class="tard">
+                <div class="descript">Proficiency Course on the English Language.</div>
+                <div class="leiamais" title="More information">Read More...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu2">
+        <div class="cardo2">
+            <div class="farst">
+                <div class="jobu">Indie Game Making Contest</div>
+                <div class="iconifreela" title="Free Lance"></div>
+                <div class="iconitrophy" title="1st Place"></div>
+            </div>
+            <div class="secan2">2018 - Game: CREApTIVE Heart</div>
+            <div class="tard">
+                <div class="descript2">Game Development Contest — Worldwide</div>
+                <div class="leiamais2" title="More information">Read More...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu2">
+        <div class="cardo2">
+            <div class="farst">
+                <div class="jobu">Bimbo do Brasil</div>
+                <div class="iconi2" title="CLT"></div>
+            </div>
+            <div class="secan2">2014 - 2018</div>
+            <div class="tard">
+                <div class="descript2">Logistics/Administrative Assistant</div>
+                <div class="leiamais2" title="More information">Read More...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu2">
+        <div class="cardo2">
+            <div class="farst">
+                <div class="jobu">Astória Papéis</div>
+                <div class="iconi2" title="CLT"></div>
+            </div>
+            <div class="secan2">2011 - 2013 — Production Line</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu2">
+        <div class="cardo2">
+            <div class="farst">
+                <div class="jobu">Walmart</div>
+                <div class="iconi2" title="CLT"></div>
+            </div>
+            <div class="secan2">2009 - 2011 — Inventory Control</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu">
+        <div class="cardo">
+            <div class="farst">
+                <div class="cussu">FIERGS/SENAI - Industrial Mechanics</div>
+                <div class="iconi" title="Concluded"></div>
+            </div>
+            <div class="secan">2007 - 2008 — Industrial Machinery Maintenance Mechanics; CNC; Technical Design.</div>
+        </div>
+    </div>
+</div>
+
+<div class="aaa">
+    <div class="blocu">
+        <div class="cardo">
+            <div class="farst">
+                <div class="cussu">Instituto Integrar - Computing</div>
+                <div class="iconi" title="Concluded"></div>
+            </div>
+            <div class="secan">2006 — Word; Excel; PowerPoint.</div>
+        </div>
+    </div>
+</div>
+
+<div class="separacione2"></div>
+
+<div class="aaa2">
+
+
+     <div class="blocu5">
+
+            <div class="cardo5" data-aos="fade-up">
+                <div class="blocu5grad">
+                    <div class="cardo5falso">
+                        <div class="prif">Striking Visuals</div>
+
+                        <div class="cote">
+                            <div class="coli1"></div>
+                            <div class="coli2">
+                                <div class="inli1">Familiarity with the best practices of</div>
+                                <div class="inli2">Efficient Design.</div>
+                            </div>
+                        </div>
+        
+                        <div class="tutividad">Intuitivity</div>
+                        <div class="roda">
+                            <div class="roditem">●Accessibility</div>
+                            <div class="roditem">●Hierarquies</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+     </div>
+
+
+
+
+
+    <div class="blocu3">
+        <div class="cardo3" data-aos="fade-up">
+            <div class="pri">Affinity</div>
+            <div class="linha">
+                <div class="atrb">HTML</div>
+                <div class="points">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="atrb">CSS</div>
+                <div class="points">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="atrb">JS</div>
+                <div class="points">
+                    <div class="star"></div>
+                    <div class="star2"></div>
+                    <div class="star2"></div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="atrb">Algorhythm</div>
+                <div class="points">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star2"></div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="atrb">UI/UX</div>
+                <div class="points">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="atrb">QA</div>
+                <div class="points">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star2"></div>
+                </div>
+            </div>
+      </div>
+  </div>
+
+  <div class="blocu4">
+    <div class="cardo4" data-aos="fade-up">
+        <div class="pri2">— Soft Skills —</div>
+        <div class="caditop">
+            <div class="lineone">
+                <div class="iconipercepssaum"></div>
+                <div class="atbutu">Perception</div>
+            </div>
+            <div class="linetwo"></div>
+            <div class="linethree">More than ten years detecting and solving bugs.</div>
+        </div>
+        <div class="cadibottu">
+            <div class="lineone">
+                <div class="iconipefomaci"></div>
+                <div class="atbutu">Performance</div>
+            </div>
+            <div class="linetwo"></div>
+            <div class="linethree">Ease working under strict deadlines.</div>
+        </div>
+    </div>
+ </div>
+
+
+
+</div>
+
+
+
+<div class="separacione"></div>
+
+<script src="mobile-navbar.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 500,
+});    
+</script>
+
+
+</body>
+</html>
