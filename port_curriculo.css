@@ -1,15 +1,18 @@
 :root{
-    --cor-fundo_site : rgb(234, 234, 234);
-    --cor-fundo_site2 :rgb(209, 209, 209);
-    --cor-menu_fundo : rgb(3, 68, 74);
-    --cor-menu_fundo2 : rgb(4, 73, 79);
-    --cor-menu_selecionado : rgb(7, 92, 95);
-    --cor-menu_selecionado2 : rgb(56, 159, 168);
+    --cor-fundo_site : rgb(240, 240, 240);
+    --cor-fundo_site2 :rgb(230, 230, 230);
+    --cor-menu_fundo : rgb(52, 52, 52);
+    --cor-menu_fundo2 : rgb(60, 60, 60);
+    --cor-menu_selecionado : rgb(70, 70, 70);
+    --cor-menu_selecionado2 : rgb(85, 85, 85);
 
     --cor-menu_letra : rgb(225, 225, 225);
     --cor-menu_letra_selec : rgb(248, 248, 248);
-    --cor-azul : rgb(255, 230, 175);
-    --cor-mafim : rgb(226, 226, 206);
+    --cor-azul : rgb(255, 255, 255);
+    --cor-azulbtn : rgb(66, 137, 223);
+    --cor-azulbtn2 :rgb(77, 152, 244);
+    --cor-mafim : rgb(215, 228, 227);
+
 }
 *{
     font-family: Verdana, "Franklin Gothic Demi", sans-serif;
@@ -177,7 +180,7 @@ body{
 
 
 .grayblocaum{
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(227, 227, 227);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -190,7 +193,7 @@ body{
     content: '';
     width: 100px;
     height: 30px;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(227, 227, 227);
     z-index: 1;
     bottom: -10px;
 }
@@ -223,8 +226,8 @@ body{
     font-size: 30px;
     border-radius: 30px 0px 0px 0px;
     margin: 0 0 25px 20%;
-    background-color: var(--cor-mafim);
-    color: var(--cor-menu_fundo2);
+    background-color: white;
+    color: var(--cor-azulbtn);
     height: 50px;
 }
 
@@ -264,17 +267,17 @@ body{
     text-decoration: none;
 }
 .crumb a{
-    color: var(--cor-menu_fundo2);
+    color:var(--cor-azulbtn);
 }
 .crumbon a{
-    color: var(--cor-menu_selecionado2);
+    color: var(--cor-azulbtn2);
 }
 .crumbdivision{
     padding: 0 10px 2px 10px;
     font-weight: 600;
     font-size: 22px;
     font-family: "Segoe UI Light";
-    color: var(--cor-menu_selecionado2);
+    color: var(--cor-azulbtn);
 }
 a:link{
     text-decoration: none;
@@ -325,7 +328,7 @@ a:link{
 .cardo2{
     border-radius: 30px 0px 0px 0px;
     margin: 0 3% 0 7%;
-    background-color: var(--cor-mafim);
+    background-color: white;
     color: var(--cor-fundo_site);
 }
 .farst{
@@ -336,7 +339,7 @@ a:link{
     font-size: 30px;
 }
 .jobu, .pri, .prif{
-    color: var(--cor-menu_fundo);
+    color: var(--cor-azulbtn);
 }
 .iconi, .iconi2, .iconibuff, .iconifreela, .iconitrophy, .star, .star2,
 .uum, .ddois, .ttres, .qquatro, .ccinco{
@@ -413,7 +416,7 @@ a:link{
     color: var(--cor-fundo_site2);
 }
 .secan2{
-    color: var(--cor-menu_fundo);
+    color: var(--cor-azulbtn);
 }
 
 .tard{
@@ -426,14 +429,16 @@ a:link{
     font-size: 24px;
     font-family: "Segoe UI Light";
 }
+
+
 .descript{
     color: var(--cor-fundo_site2);
 }
 .descript2{
-    color: var(--cor-menu_fundo2);
+    color: var(--cor-azulbtn);
 }
 .atrb{
-    font-size: 23px;
+    font-size: 22px;
     color: var(--cor-menu_selecionado);
 }
 .leiamais, .leiamais2{
@@ -449,14 +454,22 @@ a:link{
     margin: 8px 0px;
 }
 .leiamais{
+    height: 35px;
     background-color: var(--cor-menu_selecionado);
     color: var(--cor-azul);
     border: 1px solid var(--cor-azul);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
 }
 .leiamais2{
-    background-color: var(--cor-mafim);
-    color: var(--cor-menu_fundo2);
-    border: 1px solid var(--cor-menu_fundo2);
+    height: 35px;
+    background-color: white;
+    color: var(--cor-azulbtn);
+    border: 1px solid var(--cor-azulbtn);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
 }
 .leiamais:hover{
     filter: brightness(110%);
@@ -722,7 +735,7 @@ a:link{
         margin: 30px 0px 0px 10px;
     }
     .atrb{
-	margin-top: 3px;
+	    margin-top: 3px;
         font-size: 21px;
     }
     .linethree{
